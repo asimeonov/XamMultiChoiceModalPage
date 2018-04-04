@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamMultiChoiceModalPage.UWP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamMultiChoiceModalPage", "XamMultiChoiceModalPage\XamMultiChoiceModalPage\XamMultiChoiceModalPage.csproj", "{8E9556C1-BA0D-47F9-994C-92B0BFA62E3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamMultiChoiceModal", "XamMultiChoiceModal\XamMultiChoiceModal.csproj", "{DCBA30A4-BA84-4F88-93AA-35555BC2B6EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamMultiChoiceModal", "XamMultiChoiceModal\XamMultiChoiceModal.csproj", "{DCBA30A4-BA84-4F88-93AA-35555BC2B6EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
