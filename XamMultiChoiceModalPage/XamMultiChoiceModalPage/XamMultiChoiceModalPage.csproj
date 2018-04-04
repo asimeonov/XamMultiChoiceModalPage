@@ -2,10 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Atanas Simeonov</Authors>
+    <Product>XamMultiChoiceModalPage</Product>
+    <Description></Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MultiChoice\**" />
+    <EmbeddedResource Remove="MultiChoice\**" />
+    <None Remove="MultiChoice\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\XamMultiChoiceModal\XamMultiChoiceModal.csproj" />
   </ItemGroup>
 
   <ItemGroup>
