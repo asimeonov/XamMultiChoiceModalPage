@@ -3,13 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamMultiChoiceModalPage"
              x:Class="XamMultiChoiceModalPage.MainPage">
-    
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-	    <Button Text="Show multichoice" 
-                Clicked="OnShowMultichoice_Clicked" />
 
-        <Button Text="Show multichoice auto dismiss" 
-                Clicked="OnShowMultichoiceAutoDismiss_Clicked" />
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Button Text="Show Alert" Clicked="OnShowAlert_Clicked" />
+        <Button Text="Show Custom" Clicked="OnShowCustom_Clicked" />
+        <Button Text="Show Single Choice" Clicked="OnShowSingleChoice_Clicked" />
+        <Button Text="Show Multi Choice" Clicked="OnShowMultiChoice_Clicked" />
     </StackLayout>
 
 </ContentPage>
