@@ -5,7 +5,7 @@ Extention of https://github.com/xamarin/recipes/tree/master/cross-platform/xamar
 ## Usage
 1. Open **Package Manager Console**
 2. When the console is opened for **Default project** select your **.NET Standard** shared project from the list of project.
-3. Then ```Install-Package XamMultiChoiceModal``` in PM.
+3. Then ```Install-Package Xamarin.Forms.AlertDialogModal``` in PM.
 
 Aftre successful install of the package you can start using the Page by:
 
