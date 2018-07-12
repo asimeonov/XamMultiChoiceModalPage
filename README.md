@@ -42,19 +42,16 @@ The ***SelectListItem*** is a generic class that allows usage of any ```Type``` 
 
 Create instance of ***MultiChoiceDialogBuilder*** note that you will have to use same ```Type``` as the one usef for ***SelectListItem***
 ```csharp
-MultiChoiceDialogBuilder<int> multiChoiceDialogBuilder = new MultiChoiceDialogBuilder<int>(true)
-    .SetTitle("Choose Options")
-    .SetMultiChoiceItems(items)
-    .SetPositiveButton("Ok", clickedEventHandler: async (sender, arts) =>
-    {
-        await DisplayAlert("You have selected", string.Join(", ", arts.SelectedValues), "OK");
-    })
-    .SetNegativeButton("Cancel");
+var multiChoiceDialogPage = new AlertDialogBuilder<int>()
+                .SetAutoDismiss(true)
+                .SetTitle("Choose Multiple Options")
+                .SetMultiChoiceItems(items)
+                .SetPositiveButton("Ok", OnPositiveButtonClicked)
+                .SetNegativeButton("Cancel")
+                .Build();
 ```
 
-After builder is configured call the ```.Build()``` method that will return the instance of ```MultiChoiceDialogPage```. Then call the ```.Show()``` method of the instance passing the parent Page.
+Then call the ```.Show()``` method of the instance passing the parent Page.
 ```csharp
-MultiChoiceDialogPage multiChoiceDialogPage = multiChoiceDialogBuilder.Build();
-
 await multiChoiceDialogPage.Show(this);
 ```
