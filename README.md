@@ -40,7 +40,7 @@ List<SelectListItem<int>> items = new List<SelectListItem<int>>()
 ```
 The ***SelectListItem*** is a generic class that allows usage of any ```Type``` as a ***Value*** of the Item and ***Text*** for a representation in the list.
 
-Create instance of ***MultiChoiceDialogBuilder*** note that you will have to use same ```Type``` as the one usef for ***SelectListItem***
+Create instance of ***AlertDialogBuilder*** note that you will have to use same ```Type``` as the one usef for ***SelectListItem***
 ```csharp
 var multiChoiceDialogPage = new AlertDialogBuilder<int>()
                 .SetAutoDismiss(true)
