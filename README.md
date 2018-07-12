@@ -82,7 +82,7 @@ List<SelectListItem<int>> items = new List<SelectListItem<int>>()
     new SelectListItem<int>()
     {
         Text = "Option 3",
-        Value = 1
+        Value = 3
     },
 };
 ```
@@ -126,7 +126,7 @@ List<SelectListItem<int>> items = new List<SelectListItem<int>>()
     new SelectListItem<int>()
     {
         Text = "Option 3",
-        Value = 1,
+        Value = 3,
         Selected = false
     },
 };
@@ -140,7 +140,10 @@ var multiChoiceDialogPage = new AlertDialogBuilder<int>()
     .SetAutoDismiss(true)
     .SetTitle("Choose Multiple Options")
     .SetMultiChoiceItems(items)
-    .SetPositiveButton("Ok", OnPositiveButtonClicked)
+    .SetPositiveButton("Ok", async (args) =>
+    {
+        await DisplayAlert("You have selected", string.Join(", ", args.SelectedValues), "OK");
+    })
     .SetNegativeButton("Cancel")
     .Build();
 
