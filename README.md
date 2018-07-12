@@ -11,7 +11,7 @@ Aftre successful install of the package you can start using the Page by:
 
 Include the namespace 
 ```csharp 
-using XamMultiChoiceModal;
+using Xamarin.Forms.AlertDialogModal;
 ```
 
 Create collection of ***SelectListItem*** that will be shown in the MultiChoice List.
