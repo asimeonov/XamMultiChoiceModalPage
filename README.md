@@ -1,7 +1,7 @@
 # XamMultiChoiceModalPage
 A cross-platform modal page showing a frame with list of options same as AlertDialog with MultiChoiceItems.
 Extention of https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/multiselect and applied style that reminds more on modal dialog rathar then a page.
-It also has capabilities like android AlertDialog allowing consumer to display allerts, custom views, single and multi choise items.
+The library also has extented capabilities close to ***Android*** ```AlertDialog``` allowing consumer to display allerts with custom views, single and multi choise items.
 
 ## Usage
 1. Open **Package Manager Console**
