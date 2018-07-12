@@ -131,7 +131,7 @@ List<SelectListItem<int>> items = new List<SelectListItem<int>>()
     },
 };
 ```
-The ***SelectListItem*** is a generic class that allows usage of any ```Type``` as a ***Value*** of the Item and ***Text*** for a representation in the list.
+The ***SelectListItem*** is a generic class that allows usage of any ```Type``` as a ***Value*** of the Item, ***Text*** for a representation in the list and ***Selected*** boolean property indicatin is the value preselected or not.
 
 Create instance of ***AlertDialogBuilder*** note that you will have to use same ```Type``` as the one usef for ***SelectListItem***
 Then call the ```.Show()``` method of the instance passing the parent Page.
